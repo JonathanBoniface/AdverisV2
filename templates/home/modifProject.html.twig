@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edition{% endblock %}
+{% block monTitre %}Edition{% endblock %}
+{% block body %}
+
+    {{ include('home/form.html.twig', {form: form, button: 'Edition'}) }}
+
+{% endblock %}

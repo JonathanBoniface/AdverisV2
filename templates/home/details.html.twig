@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!{% endblock %}
+{% block monTitre %}Modifier {{project.name}} {% endblock %}
+{% block body %}
+    <div class="container mt-4">
+        <a class="btn btn-secondary" href="{{ path('project_modif', {'id': project.id}) }}"> Editer</a>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Debut</th>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Estimations</th>
+                <th>Temps Réel</th>
+                <th>Technologie</th>
+                <th>Type</th>
+                <th>Company</th>
+                <th>Workers</th>
+
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>{{ project.startDate|date('Y-m-d')}}</td>
+                <td>{{ project.name }}</td>
+                <td>{{ project.priceSold }}</td>
+                <td>{{ project.estimatedTime }}</td>
+                <td>{{ project.spentTime }}</td>
+                <td>{{ project.technology }}</td>
+                <td>{{ project.type }}</td>
+                <td>{{ project.companies.name }}</td>
+                {%  for worker in project.workers %}
+                <td>{{ worker.name }}</td>
+                {% endfor %}
+
+            </tr>
+
+            </tbody>
+        </table>
+        <div class="col-12 col-lg-6 p-1">
+            <div class ="card mb-3">
+                <div class="row no-gutters align-items-center p-2">
+                    <div class="col-12 col-md-4">
+                        {{ project.name }}
+                    </div>
+                    <div class="col"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.name }}</h5>
+                        <p class="card-text">
+                        <div>Prix:{{ project.priceSold }}</div>
+                        <div>Temps estimé {{ project.estimatedTime }} - Temps Passe :{{ project.spentTime }}</div>
+                        <div>Technology: {{ project.technology }}</div>
+                        <div>Type de travail:{{ project.type }}</div>
+                        <div>Company:{{ project.companies.name }}</div>
+                        </p>
+                    </div>
+{% endblock %}

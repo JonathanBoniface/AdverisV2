@@ -1,0 +1,86 @@
+<data>
+    <total_companies>10</total_companies>
+    <project>
+        <id>1</id>
+        <start_date>2018-12-07 00:00:00</start_date>
+        <name>Homepage</name>
+        <price_sold>10000</price_sold>
+        <type>evolution</type>
+        <times>
+            <estimated_time_to_completion>15</estimated_time_to_completion>
+            <spent_time>12</spent_time>
+        </times>
+        <technology>Symfony</technology>
+        <company>Google</company>
+        <workers>Paul, Franck</workers>
+    </project>
+    <project>
+        <id>2</id>
+        <start_date>2019-01-18 00:00:00</start_date>
+        <name>Refonte Site</name>
+        <price_sold>250000</price_sold>
+        <type>redesign</type>
+        <times>
+            <estimated_time_to_completion>358</estimated_time_to_completion>
+            <spent_time>246</spent_time>
+        </times>
+        <technology>Symfony</technology>
+        <company>Amazon</company>
+        <workers>Jean, Abdoul, Gérard, Mehdi, Margaux</workers>
+    </project>
+    <project><id>3</id>
+        <start_date>2019-08-24 00:00:00</start_date>
+        <name>Panier v2</name>
+        <price_sold>40000</price_sold>
+        <type>evolution</type>
+        <times>
+            <estimated_time_to_completion>57</estimated_time_to_completion>
+            <spent_time>2</spent_time>
+        </times>
+        <technology>Symfony</technology>
+        <company>Amazon</company>
+        <workers>Marine, Paul</workers>
+    </project>
+    <project>
+        <id>4</id>
+        <start_date>2020-01-01 00:00:00</start_date>
+        <name>Panier v2333</name>
+        <price_sold>5000</price_sold>
+        <type>maintenance</type>
+        <times>
+            <estimated_time_to_completion>7</estimated_time_to_completion>
+            <spent_time>1</spent_time>
+        </times>
+        <technology>Symfony</technology>
+        <company>Amazon</company>
+        <workers>Abdoul, Margaux</workers>
+    </project>
+    <project>
+        <id>4</id>
+        <start_date>2020-01-01 00:00:00</start_date>
+        <name>Home</name>
+        <price_sold>5000</price_sold>
+        <type>maintenance</type>
+        <times>
+            <estimated_time_to_completion>7</estimated_time_to_completion>
+            <spent_time>1</spent_time>
+        </times>
+        <technology>Symfony</technology>
+        <company>Amazon</company>
+        <workers>Abdoul, Margaux</workers>
+    </project>
+    <project>
+        <id>4</id>
+        <start_date>2020-01-01 00:00:00</start_date>
+        <name>Home</name>
+        <price_sold>5000</price_sold>
+        <type>maintenance</type>
+        <times>
+            <estimated_time_to_completion>7</estimated_time_to_completion>
+            <spent_time>1</spent_time>
+        </times>
+        <technology>Symfony</technology>
+        <company>Adveris</company>
+        <workers>Abdoul, Margaux</workers>
+    </project>
+</data>

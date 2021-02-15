@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+{% block monTitre %}Rechercher un Projet{% endblock %}
+{% block body %}
+
+    {{ form_start(form) }}
+
+    <div class="form-row align-items-end" >
+        <div class="col">
+            {{ form_row(form.name) }}
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Rechercher</button>
+            </div>
+        </div>
+    </div>
+    {{ form_end(form) }}
+
+
+    <div class="container mt-4">
+        {% for projects in project %}
+            <a href="{{ path('project', {'id': projects.id}) }}" class="btn btn-secondary">{{ projects.name }}</a>
+        {% endfor %}
+        <div class="text-right">
+            <td><a class="btn btn-primary" href="{{ path('add_project') }}"> Creer</a></td>
+        </div>
+
+    </div>
+
+
+{% endblock %}
