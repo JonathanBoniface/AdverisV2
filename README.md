@@ -1,6 +1,6 @@
 # AdverisV2
 
-Voici les commandes d'information.
+Voici les commandes d'importation.
 
 "CreateCompaniesFromXML"
 "CreateProjectFromXML"
